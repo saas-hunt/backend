@@ -1,0 +1,26 @@
+{
+  "name": "fundmysaas",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "fundmysaas backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fundmysaas/backend.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fundmysaas/backend/issues"
+  },
+  "homepage": "https://github.com/fundmysaas/backend#readme",
+  "dependencies": {
+    "@kratosbase/kratos": "^0.6.1",
+    "config": "^3.3.9",
+    "nodemon": "^3.0.2"
+  }
+}
