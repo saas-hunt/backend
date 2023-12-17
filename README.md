@@ -31,3 +31,7 @@ npm run serve
 
 - JWT Authentication
 - Filtering and sorting
+
+## Issues
+
+Feel free to create a new issue if you found bugs or want to request a new feature
