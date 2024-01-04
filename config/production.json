@@ -1,6 +1,6 @@
 {
     "app_host": "",
-    "app_db_server": "",
+    "app_db_server": "mongodb+srv://shdbadmin:CSx70GGYdB221q8D@saashunt.eu5qwfh.mongodb.net/?retryWrites=true&w=majority",
     "port": "80",
-    "origin": "https://backend.saashunt.xyz"
+    "origin": "https://saashunt.xyz"
 }
