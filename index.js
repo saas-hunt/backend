@@ -1,20 +1,18 @@
 import config from 'config'
 import Kratos from '@kratosbase/kratos'
-import Backer from './resources/Backer.js'
-import Product from './resources/Product.js'
+import Waitlist from './resources/Waitlist.js'
 import User from './resources/User.js'
 
-const dbServer = config.get('app_db_server')
-
 const app = new Kratos({
-    port: 9001,
-    db_server: dbServer
+    port: config.get('port'),
+    db_server: config.get('app_db_server'),
+    disable_auth: true,
+    cors_origins: config.get('origin')
 })
 
 const defaultRouter = app.router({
     users: User, 
-    products: Product, 
-    backers: Backer
+    waitlist: Waitlist,
 }).getRoutes()
 
 app.launch(defaultRouter)

@@ -1,8 +1,6 @@
 {
     "app_host": "localhost",
-    "app_db_server": "mongodb://127.0.0.1:27017/fundmysaas",
-    "smtp_host": "",
-    "smtp_port": "",
-    "smtp_user": "",
-    "smtp_pass": ""
+    "app_db_server": "mongodb://127.0.0.1:27017/saashunt",
+    "port": "9000",
+    "origin": "http://localhost:3000"
 }

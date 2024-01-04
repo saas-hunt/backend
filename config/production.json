@@ -1,8 +1,6 @@
 {
     "app_host": "",
     "app_db_server": "",
-    "smtp_host": "",
-    "smtp_port": "",
-    "smtp_user": "",
-    "smtp_pass": ""
+    "port": "80",
+    "origin": "https://backend.saashunt.xyz"
 }
