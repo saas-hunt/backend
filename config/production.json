@@ -1,6 +1,6 @@
 {
     "app_host": "",
-    "app_db_server": "mongodb+srv://vercel-admin-user:ef4s6a8rcUIG9HwV@saashunt.eu5qwfh.mongodb.net/saashunt?retryWrites=true&w=majority",
+    "app_db_server": "mongodb+srv://shdbadmin:CSx70GGYdB221q8D@saashunt.eu5qwfh.mongodb.net/saashunt?retryWrites=true&w=majority",
     "port": "80",
     "origin": "https://saashunt.xyz"
 }
