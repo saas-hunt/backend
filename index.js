@@ -1,7 +1,7 @@
 import Kratos from '@kratosbase/kratos'
 import config from 'config'
-import waitlist from './resources/waitlist.js'
-import user from './resources/user.js'
+import waitlist from './resources/wait-list.js'
+import user from './resources/users.js'
 
 const app = new Kratos({
     port: config.get('port'),
