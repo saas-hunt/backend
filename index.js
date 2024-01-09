@@ -1,18 +1,17 @@
-import config from 'config'
 import Kratos from '@kratosbase/kratos'
-import Waitlist from './resources/Waitlist.js'
-import User from './resources/User.js'
+import config from 'config'
+import waitlist from './resources/waitlist.js'
+import user from './resources/user.js'
 
 const app = new Kratos({
     port: config.get('port'),
     db_server: config.get('app_db_server'),
-    disable_auth: true,
     cors_origins: config.get('origin')
 })
 
 const defaultRouter = app.router({
-    users: User, 
-    waitlist: Waitlist,
+    users: user, 
+    waitlist
 }).getRoutes()
 
 app.launch(defaultRouter)

@@ -6,7 +6,7 @@ const commonValidations = {
     passage_id: Joi.string().trim()
 }
 
-const User = {
+const user = {
     schema: {
         user_name: { type: String, required: true, unique: true },
         picture: { type: String, required: true },
@@ -17,9 +17,24 @@ const User = {
     },
 
     validationRules: {
-        post: commonValidations,
-        patch: commonValidations
+        post: {
+            rules: commonValidations,
+            roles: ['developer'],
+            single_roles: ['developer']
+        },
+
+        patch: {
+            rules: commonValidations,
+            roles: ['developer'],
+            single_roles: ['developer']
+        },
+
+        get: {
+            rules: commonValidations,
+            roles: ['developer'],
+            single_roles: ['developer']
+        }
     }
 }
 
-export default User
+export default user
